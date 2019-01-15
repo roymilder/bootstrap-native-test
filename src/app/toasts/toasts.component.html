@@ -1,0 +1,11 @@
+<div aria-live="polite" aria-atomic="true"
+     style="position: relative; min-height: 20px; z-index: 9999">
+  <!-- Position it -->
+  <div style="position: absolute; top: 0; right: 0;">
+
+    <div *ngFor="let toast of toasts">
+      <app-toast [data]="toast"></app-toast>
+    </div>
+
+  </div>
+</div>
